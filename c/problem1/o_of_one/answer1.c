@@ -2,7 +2,7 @@
 
 /*
  * Zeroth argument: number of test cases (t)
- * Arguments 1 through n: Upper bound for the range of integers
+ * Arguments 1 through t: Upper bound for the range of integers
  * within which we would like to find the number of multiples of 
  * three and five
  */ 
