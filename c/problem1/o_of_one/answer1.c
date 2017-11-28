@@ -14,14 +14,15 @@ int main(){
         int n; 
         scanf("%d",&n);
         
+        // number of multiples of each number in [1, n]	
         long long int count_div_3 = (n-1) / 3;
         long long int  count_div_5 = (n-1) / 5;
         long long int count_div_15 = (n-1) / 15;
         
+        // sum of multiples of each number in [1, n]	
         long long int mul_3 = 3 * count_div_3 * (count_div_3 + 1) / 2;
         long long int mul_5 = 5 * count_div_5 * (count_div_5 + 1) / 2;
         long long int mul_15 = 15 * count_div_15 * (count_div_15 + 1) / 2;
-        
         
         long long int sum = mul_3 + mul_5 - mul_15;
         printf("%lld\n", sum);
